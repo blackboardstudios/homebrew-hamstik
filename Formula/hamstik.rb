@@ -1,25 +1,25 @@
 class HamstikCli < Formula
   desc "Official command-line interface for Hamstik"
   homepage "https://hamstik.com"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/blackboardstudios/hamstik-cli/releases/download/v0.1.1/hamstik-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "2a8996e99bfe37234d363c8163f25017acf85636fadee255dfa5df5bc71f8067"
+      url "https://github.com/blackboardstudios/hamstik-cli/releases/download/v0.1.2/hamstik-cli-aarch64-apple-darwin.tar.gz"
+      sha256 "c7f1db5d284ed9c781370caf6e0376dc09d69060a998b20f2e879179a8267e66"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/blackboardstudios/hamstik-cli/releases/download/v0.1.1/hamstik-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "a339c963cf91615b74caf715f11411a6ccbd14bdda282f15d8ed663c7c512b07"
+      url "https://github.com/blackboardstudios/hamstik-cli/releases/download/v0.1.2/hamstik-cli-x86_64-apple-darwin.tar.gz"
+      sha256 "7f62196479c8e8d619c491f1d41cc4ff0efb282d1b102765bf98133349c5c2af"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/blackboardstudios/hamstik-cli/releases/download/v0.1.1/hamstik-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "34cbfb2e73a8438842f589a1e9d20ed6b868717b81f12825e8975efa818a9eb1"
+      url "https://github.com/blackboardstudios/hamstik-cli/releases/download/v0.1.2/hamstik-cli-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "edc78a6ce87500e9dd63c1ac00f39c7c5b72d060bf2f4db5584976a727e0d8c1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/blackboardstudios/hamstik-cli/releases/download/v0.1.1/hamstik-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "aac002282b3186041bb2f6c5694f5f8446930d5f0318d0c1b92625ec36f3b005"
+      url "https://github.com/blackboardstudios/hamstik-cli/releases/download/v0.1.2/hamstik-cli-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "02ccadb6cb347dbe9b1bac6c1f56622d4d976b9f62c53405deb36da16254362a"
     end
   end
   license "Apache-2.0"
