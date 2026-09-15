@@ -1,4 +1,4 @@
-class HamstikCli < Formula
+class Hamstik < Formula
   desc "Official command-line interface for Hamstik"
   homepage "https://hamstik.com"
   version "0.1.2"
