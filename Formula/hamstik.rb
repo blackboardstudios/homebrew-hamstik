@@ -1,25 +1,25 @@
 class Hamstik < Formula
   desc "Official command-line interface for Hamstik"
   homepage "https://hamstik.com"
-  version "0.5.0"
+  version "0.6.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/blackboardstudios/hamstik-cli/releases/download/v0.5.0/hamstik-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "f496846b1872407d32758dd0fbfb95390b278e6bd3d15d27a910d2799ff76df3"
+      url "https://github.com/blackboardstudios/hamstik-cli/releases/download/v0.6.0/hamstik-cli-aarch64-apple-darwin.tar.gz"
+      sha256 "2aa0a7e4b4d3ecdf87858379a2cdfb645150dd9d03bb105680f47513246b6de4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/blackboardstudios/hamstik-cli/releases/download/v0.5.0/hamstik-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "d9979791887eec96a3dd5bdf910f0183996183736e599e150b2be60a63f5efb8"
+      url "https://github.com/blackboardstudios/hamstik-cli/releases/download/v0.6.0/hamstik-cli-x86_64-apple-darwin.tar.gz"
+      sha256 "26d5ac06f58354228b17062f376e09a492d9a75ad1a92b534d126681300e31ce"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/blackboardstudios/hamstik-cli/releases/download/v0.5.0/hamstik-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6cb889024a42113e61dcbd658fb467f9ba3488da4b07b177b0fb18989c6ae7a4"
+      url "https://github.com/blackboardstudios/hamstik-cli/releases/download/v0.6.0/hamstik-cli-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "92cb5183a7da647ead723b3070fe69d9aaee881563b596bbfb51c9f1590bd02e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/blackboardstudios/hamstik-cli/releases/download/v0.5.0/hamstik-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "1386ef2f16952476bd9a9ebd21798634ed46271e48eec8030ecea7a65d0e5e38"
+      url "https://github.com/blackboardstudios/hamstik-cli/releases/download/v0.6.0/hamstik-cli-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "60f601bcd780d294c99e1783cc9d64714a2b51a63e3195763ab001a33e4bed04"
     end
   end
   license "Apache-2.0"
