@@ -1,36 +1,36 @@
 class Hamstik < Formula
   desc "Official command-line interface for Hamstik"
   homepage "https://hamstik.com"
-  version "0.1.3"
+  version "0.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/blackboardstudios/hamstik-cli/releases/download/v0.1.3/hamstik-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "217b4cf7feabd5eef6fb702452f7cc2bf63ef64f0467fade167f0ddb41116f7c"
+      url "https://github.com/blackboardstudios/hamstik-cli/releases/download/v0.5.0/hamstik-cli-aarch64-apple-darwin.tar.gz"
+      sha256 "f496846b1872407d32758dd0fbfb95390b278e6bd3d15d27a910d2799ff76df3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/blackboardstudios/hamstik-cli/releases/download/v0.1.3/hamstik-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "58509db9e343c054a00acaa36653ab680f9efef0eb134f46782b259be8f95c20"
+      url "https://github.com/blackboardstudios/hamstik-cli/releases/download/v0.5.0/hamstik-cli-x86_64-apple-darwin.tar.gz"
+      sha256 "d9979791887eec96a3dd5bdf910f0183996183736e599e150b2be60a63f5efb8"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/blackboardstudios/hamstik-cli/releases/download/v0.1.3/hamstik-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "69c87f6837b6142aedc4b0675e4c4441d61d9136204c43301242ee8129371a6a"
+      url "https://github.com/blackboardstudios/hamstik-cli/releases/download/v0.5.0/hamstik-cli-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "6cb889024a42113e61dcbd658fb467f9ba3488da4b07b177b0fb18989c6ae7a4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/blackboardstudios/hamstik-cli/releases/download/v0.1.3/hamstik-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7e2faa2beae86127324732ed6852a98389567c0831276f6321d80be9520ee188"
+      url "https://github.com/blackboardstudios/hamstik-cli/releases/download/v0.5.0/hamstik-cli-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "1386ef2f16952476bd9a9ebd21798634ed46271e48eec8030ecea7a65d0e5e38"
     end
   end
   license "Apache-2.0"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin":      {},
+    "aarch64-apple-darwin": {},
     "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin":       {},
-    "x86_64-pc-windows-gnu":     {},
-    "x86_64-unknown-linux-gnu":  {},
-  }.freeze
+    "x86_64-apple-darwin": {},
+    "x86_64-pc-windows-gnu": {},
+    "x86_64-unknown-linux-gnu": {}
+  }
 
   def target_triple
     cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
